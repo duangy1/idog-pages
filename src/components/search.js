@@ -1,7 +1,7 @@
 
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
-import { deepOrange} from '@material-ui/core/colors';
+import { Route, Link } from 'react-router-dom';
 
 function Search() {
   return (
@@ -14,10 +14,17 @@ function Search() {
           Search
         </Button>
       </div>
-      <div style={{padding:'80px'}}>
-        <Button variant="contained" color="inherit" style={{margin:'0 30px',width:'25%',height:'100px'}}>Multi omics</Button>
-        <Button variant="contained" color="primary" style={{margin:'0 30px',width:'25%',height:'100px'}}>Single Cell Type </Button>
-        <Button variant="contained" color="inherit" style={{margin:'0 30px',width:'25%',height:'100px'}}>Download </Button>
+      <div style={{ padding: '80px' }}>
+        <Button variant="contained" color="inherit" style={{ margin: '0 30px', width: '25%', height: '100px' }}>Multi omics</Button>
+        <Link to={{ pathname: '/single-cell' }}>
+
+          <Button variant="contained" color="primary" style={{ margin: '0 30px', width: '25%', height: '100px' }}>
+            Single Cell Type
+          </Button>
+        </Link>
+        <Button variant="contained" color="inherit" style={{ margin: '0 30px', width: '25%', height: '100px' }}>
+          Download
+        </Button>
       </div>
     </div>
 

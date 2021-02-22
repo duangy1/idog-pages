@@ -2,12 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Home from "./pages/home";
+import Singlecell from './pages/singlecell'
 import reportWebVitals from './reportWebVitals';
+import {  Route } from 'react-router';
+import { BrowserRouter, HashRouter } from "react-router-dom";
+import { createHashHistory } from 'history';
+
+const hashHistory = createHashHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
+
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+    <switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/single-cell" exact component={Singlecell} />
+    </switch>
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 

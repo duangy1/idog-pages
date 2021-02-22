@@ -7,22 +7,22 @@ export default function BackgroundColor() {
     <Grid container spacing={1}>
       <Grid item xs={12} sm={4}>
         <Box bgcolor="primary.main" color="primary.contrastText" p={2}>
-        Multi omics
+          Multi omics
         </Box>
       </Grid>
       <Grid item xs={12} sm={4}>
-        <Box bgcolor="secondary.main" color="secondary.contrastText" p={2}>
-        Single Cell Type
+        <Box bgcolor="secondary.maSin" color="secondary.contrastText" p={2}>
+          Single Cell Type
         </Box>
       </Grid>
       <Grid item xs={12} sm={4}>
         <Box bgcolor="error.main" color="error.contrastText" p={2}>
-        Download
+          Download
         </Box>
       </Grid>
-      
 
-      
+
+
       <Grid item xs={12} sm={4}>
         <Box bgcolor="warning.main" color="warning.contrastText" p={2}>
           warning.main
