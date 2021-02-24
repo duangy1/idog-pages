@@ -97,8 +97,8 @@ class Statistic extends React.Component {
     render() {
         return (
             <div>
-                <div id="main" style={{ width: '50%', height: 500, float: 'left' }} ></div>
-                <div id="right-main" style={{ width: '50%', height: 500, float: 'left' }}></div>
+                <div id="main" style={{ width: '50%', height: 500 ,float:'left'}} ></div>
+                <div id="right-main" style={{ width: '50%', height: 500 ,float:'left'}}></div>
             </div>
         );
     }

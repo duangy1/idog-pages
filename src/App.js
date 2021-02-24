@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Title />
       <Navigator />
-      <Toggle />
+      {/* <Toggle /> */}
     </div>
   );
 }

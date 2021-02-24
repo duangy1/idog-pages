@@ -1,6 +1,6 @@
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
-import { deepOrange } from '@material-ui/core/colors';
+import { Route, Link } from 'react-router-dom';
 function Navigator() {
   return (
 
@@ -11,7 +11,9 @@ function Navigator() {
       showLabels
       style={{ backgroundColor: '#3296C8' }}
     >
+      
       <BottomNavigationAction label="Home" style={{ color: 'white', fontSize: '50px' }} />
+      
       <BottomNavigationAction label="Browse" style={{ color: 'white' }} />
       <BottomNavigationAction label="Search" style={{ color: 'white' }} />
       <BottomNavigationAction label="Download" style={{ color: 'white' }} />
