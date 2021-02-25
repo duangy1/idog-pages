@@ -1,6 +1,6 @@
 import Title from './components/title'
 import Navigator from './components/navigator'
-import Toggle from './components/toggle-nav'
+// import Toggle from './components/toggle-nav
 
 import './App.css';
 
